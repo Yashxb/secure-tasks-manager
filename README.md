@@ -1,97 +1,34 @@
 
-Secure Task Manager API
+🔐 Secure Task Manager API
 
-Submitted By: Yash Raj Bhasin
+📌 Overview: A secure REST API built using Node.js, Express, MongoDB, and JWT to manage user tasks with authentication and authorization.
 
-Project Overview
+✨ Features: 1)JWT-based authentication 2)Secure password hashing 3)Protected API routes 4)User-specific task management
 
-This project is a Secure Task Manager API built using Node.js, Express, MongoDB, and JWT Authentication.
-It allows users to register, login, and manage their tasks securely. All task routes are protected using JWT.
+🛠️ Tech Stack: 1)Node.js 2)Express.js 3)MongoDB & Mongoose 4)JSON Web Token (JWT) 5)bcrypt
 
-Technologies Used
+🔗 API Endpoints: POST /api/auth/register POST /api/auth/login POST /api/tasks (Protected) GET /api/tasks (Protected)
 
-Node.js
+✅ Task Routes (Protected) : Method Endpoint Description POST /api/tasks Create a new task GET /api/tasks Get all tasks of logged-in user
 
-Express.js
+⚙️ Environment Variables Create a .env file in the root directory:
 
-MongoDB & Mongoose
+PORT=5000 MONGO_URI=mongodb://127.0.0.1:27017/secureTaskDB JWT_SECRET=securetasksecret123
 
-JWT (jsonwebtoken)
+▶️ Run Project npm install nodemon server.js Server will run at:
 
-bcryptjs
-
-dotenv
-
-cors
-
-Features
-
-User Registration
-
-User Login
-
-Password Hashing
-
-JWT Authentication
-
-Create Task
-
-Get User Tasks
-
-Update Task
-
-Delete Task
-
-Protected Routes
-
-Installation Steps
-
-Install dependencies
-
-npm install
-
-
-Create .env file
-
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
-
-
-Run server
-
-npm run dev
-
-
-Server runs at:
 http://localhost:5000
 
-API Endpoints
+Testing the API - 1)API endpoints are tested using Postman 2)Postman collection is included in the repository 3)JWT-protected routes are tested using Authorization headers
 
-Authentication
+🌿 GitHub Branching Strategy This project follows a three-branch workflow:
 
-POST /api/auth/register
+dev → Development stage → Testin main → Final submission All code is merged following:
 
-POST /api/auth/login
+dev → stage → main
 
-Tasks (Protected – Requires Token)
+🔐 Authorization Authorization: Bearer <JWT_TOKEN>
 
-POST /api/tasks
+📌 Conclusion The Secure Task Manager API successfully demonstrates secure backend development practices using JWT authentication. It ensures data privacy, authorization control, and follows professional project structuring suitable for academic and real-world applications.
 
-GET /api/tasks
-
-PUT /api/tasks/:id
-
-DELETE /api/tasks/:id
-
-Authorization Header:
-
-Bearer <token>
-
-Author
-
-Yash Raj Bhasin
-=======
-# secure-tasks-manager
-This project is a Secure Task Manager API built using Node.js, Express, MongoDB, and JWT authentication. It allows users to securely register, log in, and perform CRUD operations on their own tasks using protected routes
->>>>>>> 519910aac1a17e5e7cf6fb8145993a1f471ab59e
+👤 Author: Yash Raj Bhasin
