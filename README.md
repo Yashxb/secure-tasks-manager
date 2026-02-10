@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 Secure Task Manager API
 
 Submitted By: Yash Raj Bhasin
